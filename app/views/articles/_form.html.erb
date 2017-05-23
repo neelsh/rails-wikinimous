@@ -1,0 +1,9 @@
+<%= form_for @article, class: 'form-inline' do |f| %>
+  <%= f.label :title, "Enter a title" %>
+  <%= f.text_field :title, class: 'form-control' %>
+
+  <%= f.label :content, "Enter content" %>
+  <%= f.text_field :content %>
+
+  <%= f.submit %>
+<% end %>
