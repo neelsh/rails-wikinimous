@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Article.populate 10 do |article|
+  title = Faker::StarWars.character
+  content = Faker::StarWars.quote
+end
